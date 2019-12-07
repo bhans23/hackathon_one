@@ -18,6 +18,7 @@
 
   body {
     background: #464646;
+    color: #fff;
   }
   h1, h2, h3, h4, h5, h6, p {
     color: #fff
@@ -37,10 +38,12 @@
   .btn-primary {
     background-color: #E44D25;
     color: #fff !important;
+    border-color: transparent !important;
   }
   .btn-primary:hover {
     background-color: #FF4D1E;
     color: #fff !important;
+    border-color: transparent !important;
   }
 
   nav {

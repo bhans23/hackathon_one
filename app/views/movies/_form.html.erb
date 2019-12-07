@@ -1,24 +1,38 @@
 <%= form_for @movie do |f| %>
 	<%= f.label :title %>
+	<br />
 	<%= f.text_field :title, required: true %>
 	<br />
+	<br />
 	<%= f.label :description %>
+	<br />
 	<%= f.text_field :description, required: true %>
 	<br />
+	<br />
 	<%= f.label :duration %>
+	<br />
 	<%= f.text_field :duration, required: true, placeholder: "2hr 0min" %>
 	<br />
+	<br />
 	<%= f.label :genre %>
+	<br />
 	<%= f.text_field :genre, required: true %>
 	<br />
+	<br />
 	<%= f.label "Link to Youtube Trailer" %>
+	<br />
 	<%= f.text_field :trailer, required: true %>
 	<br />
+	<br />
 	<%= f.label "Movie Poster Image Link" %>
+	<br />
 	<%= f.text_field :image %>
 	<br />
+	<br />
 	<%= f.label "Link to Watch Movie" %>
+	<br />
 	<%= f.text_field :plex %>
+	<br />
 	<br />
 	<%= f.submit %>
 <% end %>

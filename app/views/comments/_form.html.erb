@@ -1,7 +1,15 @@
-<%= form_for [@movie, @comment] do |f| %>
-  <%= f.label :full_name %>
-  <%= f.text_field :full_name, placeholder: 'Leave Blank To Remain Anonymous' %>
-  <%= f.label :body %>
-  <%= f.text_area :body, required: true %>
-  <%= f.submit %>
-<% end %>
+  <%= form_for [@movie, @comment] do |f| %>
+    <%= f.label :full_name %>
+    <br />
+    <%= f.text_field :full_name %>
+    <br />
+    <br />
+
+    <%= f.label :body %>
+    <br />
+    <%= f.text_field :body, required: true %>
+    <br />
+    <br />
+
+    <%= f.submit %>
+  <% end %>
