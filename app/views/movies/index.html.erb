@@ -1,8 +1,9 @@
 <h1>Movies!</h1>
 <%= link_to "Create a New Movie", new_movie_path %>
-<div class="container">
+<div class="container-fluid">
+   <div class="row">
 	<% @movies.each do |movie| %>
-		<div class="card">
+		<div class="card col-md-4 col-sm-6">
          <div class="card-img-top">
             <%= movie.image ? (link_to image_tag(movie.image), movie) : "No Movie Image" %>
          </div>
@@ -12,8 +13,9 @@
                </div>
                <%= link_to "Movie Description", movie.description, class: "card-text" %>
                <br />
-               <%= link_to "Go to Movie", movie, class: "btn btn-primary" %>
+               <%= link_to "View", movie, class: "btn btn-primary" %>
          </div>
 		</div>
 	<% end %>
+   </div>
 </div>

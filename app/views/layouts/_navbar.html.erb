@@ -1,11 +1,10 @@
-<nav>
-  <div>
+<nav class="navbar navbar-dark">
+  <div class="navbar-brand">
+    <img src="https://res.cloudinary.com/dzo5gt6y2/image/upload/v1575760128/logo_pgmykj.png" width="300px">
+  </div>
+  <div class="n-items">
     <%= link_to "Home", root_path %>
-  <div>
-  <div>
     <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
-  <div>
-  <div>
     <%= link_to "Edit User Login", edit_user_registration_path %>
-  <div>
+  </div>
 </nav>
