@@ -1,0 +1,13 @@
+<h1>Comments: </h1>
+<%= link_to "New Comment", new_movie_comment_path(@movie.id) %>
+
+<table class="">
+    <% @movie.comments.each do |c| %>
+  <tr>
+    <td><%= c.full_name %></td>
+    <td><%= c.body %></td>
+    <td><%= c.created_at.strftime("%c")%></td>
+    <td><%= link_to "Delete", [@movie,c], method: :delete %> / <%= link_to "Edit",  edit_movie_comment_path(@movie,c) %></td>
+  </tr>
+    <%end%>
+</table>
